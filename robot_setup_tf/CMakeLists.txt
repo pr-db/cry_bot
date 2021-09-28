@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(tf_bot_setup)
+project(robot_setup_tf)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -10,7 +10,6 @@ project(tf_bot_setup)
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   roscpp
-  rospy
   tf
 )
 
@@ -105,8 +104,8 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES tf_bot_setup
-#  CATKIN_DEPENDS geometry_msgs roscpp rospy tf
+#  LIBRARIES robot_setup_tf
+#  CATKIN_DEPENDS geometry_msgs roscpp tf
 #  DEPENDS system_lib
 )
 
@@ -123,7 +122,7 @@ include_directories(
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/tf_bot_setup.cpp
+#   src/${PROJECT_NAME}/robot_setup_tf.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -134,7 +133,7 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/tf_bot_setup_node.cpp)
+# add_executable(${PROJECT_NAME}_node src/robot_setup_tf_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -198,7 +197,7 @@ include_directories(
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_tf_bot_setup.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_robot_setup_tf.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
@@ -210,3 +209,4 @@ add_executable(tf_broadcaster src/tf_broadcaster.cpp)
 add_executable(tf_listener src/tf_listener.cpp)
 target_link_libraries(tf_broadcaster ${catkin_LIBRARIES})
 target_link_libraries(tf_listener ${catkin_LIBRARIES})
+
