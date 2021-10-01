@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/pr/rosws/devel/include/**",
+                "/opt/ros/noetic/include/**",
+                "/home/pr/turtlews/devel/include/**",
+                "/home/pr/turtlews/src/DynamixelSDK/ros/dynamixel_sdk/include/**",
+                "/home/pr/rosws/src/imgpro/include/**",
+                "/home/pr/rosws/src/cry_bot/nav_test/include/**",
+                "/home/pr/rosws/src/cry_bot/r2d2/include/**",
+                "/home/pr/rosws/src/cry_bot/robot_setup_tf/include/**",
+                "/home/pr/turtlews/src/turtlebot3_simulations/turtlebot3_fake/include/**",
+                "/home/pr/turtlews/src/turtlebot3_simulations/turtlebot3_gazebo/include/**",
+                "/home/pr/turtlews/src/turtlebot3/turtlebot3_slam/include/**",
+                "/home/pr/rosws/src/vrx/usv_gazebo_plugins/include/**",
+                "/home/pr/rosws/src/vrx/vrx_gazebo/include/**",
+                "/home/pr/rosws/src/vrx/wave_gazebo_plugins/include/**",
+                "/usr/include/**",
+                "/opt/ros/noetic/include"
+            ],
+            "name": "ROS"
+        }
+    ],
+    "version": 4
+}
